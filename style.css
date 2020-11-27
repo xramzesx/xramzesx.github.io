@@ -1,0 +1,31 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+.container {
+    height: 100%;
+    min-height: 100%;
+    min-height: 100vh;
+
+    /* text-align:  center; */
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    color: white;
+    /* background-color: white; */
+    /* filter: invert(1); */
+    /* background-color: aliceblue; */
+}
+
+.container p {
+    color: #aaa;
+}
