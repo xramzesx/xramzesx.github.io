@@ -61,6 +61,8 @@ const Image = styled.img`
   border-bottom-right-radius: 2rem;
   margin: 0 2rem;
 
+  user-select: none;
+
   ${media.mobile} {
     margin-top: 2rem;
 
@@ -125,17 +127,17 @@ const Hero = () => {
               href="https://www.linkedin.com/in/jakubkedra/"
               target="_blank"
             >
-              <Icon src={linkedInIcon} alt="GH" />
+              <Icon src={linkedInIcon} alt="GH" draggable={false} />
               <LinkLabel>@jakubkedra</LinkLabel>
             </Link>
             <Link href="https://github.com/xramzesx" target="_blank">
-              <Icon src={githubIcon} alt="GH" />
+              <Icon src={githubIcon} alt="GH" draggable={false} />
               <LinkLabel>@xramzesx</LinkLabel>
             </Link>
           </LinksContainer>
         </Content>
 
-        <Image src={hero} alt="Jakub Kędra" />
+        <Image src={hero} alt="Jakub Kędra" draggable={false} />
       </HeroContainer>
     </Wrapper>
   );
