@@ -13,7 +13,7 @@ const font = {
 
 const safeArea = {
   wide: 1920,
-  normal: 1200,
+  normal: 1300,
 };
 
 const screen = {

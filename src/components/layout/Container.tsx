@@ -1,27 +1,18 @@
 import sizes from "@/constants/sizes";
 import styled from "styled-components";
 
-type WidthType = "normal" | "wide";
 type HeightType = "page" | "custom";
 
 interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
-  widthType: WidthType;
   heightType: HeightType;
 }
 
 const StyledContainer = styled.div<{
-  $widthType: WidthType;
   $heightType: HeightType;
 }>`
   /* WIDTH */
   width: 100vw;
-  max-width: ${({ $widthType }) => {
-    if ($widthType === "wide") {
-      return sizes.safeArea.wide;
-    } else {
-      return sizes.safeArea.normal;
-    }
-  }}px;
+  max-width: ${sizes.safeArea.normal}px;
 
   /* HEIGHT */
   ${({ $heightType }) => {
@@ -36,14 +27,8 @@ const StyledContainer = styled.div<{
   flex-direction: column;
 `;
 
-const Container = ({ widthType, heightType, ...rest }: ContainerProps) => {
-  return (
-    <StyledContainer
-      $widthType={widthType}
-      $heightType={heightType}
-      {...rest}
-    />
-  );
+const Container = ({ heightType, ...rest }: ContainerProps) => {
+  return <StyledContainer $heightType={heightType} {...rest} />;
 };
 
 export default Container;
