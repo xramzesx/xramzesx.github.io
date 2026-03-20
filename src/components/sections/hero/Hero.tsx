@@ -18,7 +18,8 @@ const HeroContainer = styled(Container)`
   ${media.mobile} {
     flex-direction: column-reverse;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
+    padding: 2rem 0;
   }
 `;
 
@@ -54,7 +55,7 @@ const Info = styled.p`
 `;
 
 const Image = styled.img`
-  height: calc(100vh - 2rem);
+  height: calc(100svh - 2rem);
 
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
@@ -77,6 +78,7 @@ const LinksContainer = styled.div`
 `;
 
 const Link = styled.a`
+  font-size: 1.25rem;
   text-decoration: none;
 
   padding: 0.5rem 0.25rem;
@@ -84,22 +86,28 @@ const Link = styled.a`
   color: black;
   align-items: center;
   justify-content: center;
-  gap: 0.25rem;
+  gap: calc(0.25rem * 1.5);
 
   &:hover span {
     text-underline-offset: 0.5rem;
+    text-decoration-color: #000;
   }
 `;
 
 const LinkLabel = styled.span`
   text-decoration: underline;
   text-underline-offset: 0.25rem;
-  transition: text-underline-offset 0.25s ease;
+  text-decoration-thickness: 0.2rem;
+  text-decoration-color: #ddd;
+  transition:
+    text-underline-offset 0.25s ease,
+    text-decoration-color 0.25s ease,
+    text-decoration-thickness 0.25s ease;
 `;
 
 const Icon = styled.img`
-  height: 1rem;
-  width: 1rem;
+  height: 1.25rem;
+  width: 1.25rem;
 `;
 
 const Hero = () => {
