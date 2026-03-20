@@ -17,7 +17,7 @@ const StyledContainer = styled.div<{
   /* HEIGHT */
   ${({ $heightType }) => {
     if ($heightType === "page") {
-      return "min-height: 100vh;";
+      return "min-height: 100svh;";
     } else {
       return "";
     }
