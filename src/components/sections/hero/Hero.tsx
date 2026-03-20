@@ -121,11 +121,14 @@ const Hero = () => {
             Technology, Faculty of Computer Science
           </Info>
           <LinksContainer>
-            <Link href="https://www.linkedin.com/in/jakubkedra/">
+            <Link
+              href="https://www.linkedin.com/in/jakubkedra/"
+              target="_blank"
+            >
               <Icon src={linkedInIcon} alt="GH" />
               <LinkLabel>@jakubkedra</LinkLabel>
             </Link>
-            <Link href="https://github.com/xramzesx">
+            <Link href="https://github.com/xramzesx" target="_blank">
               <Icon src={githubIcon} alt="GH" />
               <LinkLabel>@xramzesx</LinkLabel>
             </Link>
