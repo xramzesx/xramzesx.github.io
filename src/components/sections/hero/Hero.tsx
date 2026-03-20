@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import Container from "../../layout/Container";
 import hero from "@/assets/img/hero.jpg";
-import sizes from "@/constants/sizes";
+import githubIcon from "@/assets/img/icons/github.svg";
+import linkedInIcon from "@/assets/img/icons/linkedin.svg";
 import { media } from "@/constants/breakpoints";
 
 const Wrapper = styled.section`
@@ -23,9 +24,7 @@ const HeroContainer = styled(Container)`
 
 const Content = styled.div`
   display: flex;
-  /* border: 2px dashed gray; */
   flex-direction: column;
-  /* flex: 1; */
   padding: 2rem;
   width: 100%;
   justify-content: center;
@@ -73,6 +72,36 @@ const Image = styled.img`
   }
 `;
 
+const LinksContainer = styled.div`
+  padding-top: 0.25rem;
+`;
+
+const Link = styled.a`
+  text-decoration: none;
+
+  padding: 0.5rem 0.25rem;
+  display: inline-flex;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+
+  &:hover span {
+    text-underline-offset: 0.5rem;
+  }
+`;
+
+const LinkLabel = styled.span`
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+  transition: text-underline-offset 0.25s ease;
+`;
+
+const Icon = styled.img`
+  height: 1rem;
+  width: 1rem;
+`;
+
 const Hero = () => {
   return (
     <Wrapper>
@@ -83,6 +112,16 @@ const Hero = () => {
             5th-year Computer Science student at AGH University of Science and
             Technology, Faculty of Computer Science
           </Info>
+          <LinksContainer>
+            <Link href="https://www.linkedin.com/in/jakubkedra/">
+              <Icon src={linkedInIcon} alt="GH" />
+              <LinkLabel>@jakubkedra</LinkLabel>
+            </Link>
+            <Link href="https://github.com/xramzesx">
+              <Icon src={githubIcon} alt="GH" />
+              <LinkLabel>@xramzesx</LinkLabel>
+            </Link>
+          </LinksContainer>
         </Content>
 
         <Image src={hero} alt="Jakub Kędra" />
