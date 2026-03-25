@@ -7,11 +7,30 @@ const Wrapper = styled.section`
   justify-content: center;
 
   background: #101010;
+  padding: 6rem 0;
 `;
 
 const Header = styled.h1`
   text-align: center;
   color: white;
+`;
+
+const TileImage = styled.img`
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+`;
+
+const IdleTileImage = styled(TileImage)`
+  filter: saturate(0) brightness(75%); /* biały → czarny */
+`;
+
+const ActiveTileImage = styled(TileImage)`
+  transition: opacity 0.25s ease;
+
+  opacity: 0;
 `;
 
 const Tile = styled.a`
@@ -25,26 +44,25 @@ const Tile = styled.a`
   border-radius: 0.5rem;
   overflow: hidden;
 
-  &:hover {
-    filter: none;
-  }
-`;
+  position: relative;
 
-const TileImage = styled.img`
-  width: 100%;
-  height: 100%;
+  &:hover ${ActiveTileImage} {
+    opacity: 1;
+  }
 `;
 
 type BadgeTileProps = {
   href: string;
-  imgSrc: string;
-  imgAlt: string;
+  idleSrc: string;
+  activeSrc: string;
+  alt: string;
 };
 
-const BadgeTile = ({ href, imgSrc, imgAlt }: BadgeTileProps) => {
+const BadgeTile = ({ href, idleSrc, activeSrc, alt }: BadgeTileProps) => {
   return (
     <Tile href={href}>
-      <TileImage src={imgSrc} alt={imgAlt} draggable={false} />
+      <IdleTileImage src={idleSrc} alt={alt} draggable={false} />
+      <ActiveTileImage src={activeSrc} alt={alt} draggable={false} />
     </Tile>
   );
 };
@@ -52,26 +70,36 @@ const BadgeTile = ({ href, imgSrc, imgAlt }: BadgeTileProps) => {
 const BadgesContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   padding: 1rem 2rem;
   gap: 0.5rem;
   flex-wrap: wrap;
-  max-width: calc(15 * 3rem + 14 * 0.5rem);
+  max-width: calc(15 * 3rem + 14 * 0.5rem + 4rem);
   align-self: center;
 `;
 
+import jsIcon from "@/assets/img/icons/javascript-flat.svg";
+
 const mockedSkill = {
   href: "https://skillicons.dev/icons?i=js",
-  imgSrc:
+
+  idleSrc: jsIcon,
+  activeSrc:
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg",
-  imgAlt: "js",
+
+  alt: "js",
 };
 
 const Skills = () => {
   // TODO: Replace mocked data with data from external source/JSON
   const mockedData = Array.from({ length: 25 }, () => ({ ...mockedSkill }));
   const badges = mockedData.map((data) => (
-    <BadgeTile href={data.href} imgSrc={data.imgSrc} imgAlt={data.imgAlt} />
+    <BadgeTile
+      href={data.href}
+      idleSrc={data.idleSrc}
+      activeSrc={data.activeSrc}
+      alt={data.alt}
+    />
   ));
 
   return (
