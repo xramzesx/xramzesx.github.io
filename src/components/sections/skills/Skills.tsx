@@ -1,7 +1,7 @@
 import Container from "@/components/layout/Container";
 import styled from "styled-components";
-import BadgeTile from "@/components/common/BadgeTile";
 import { useSkills } from "@/hooks/useSkills";
+import Badge from "@/components/common/Badge";
 
 const Wrapper = styled.section`
   display: flex;
@@ -39,7 +39,7 @@ const SectionContainer = styled.div`
 `;
 
 const StyledContainer = styled(Container)`
-  gap: 4rem;
+  gap: 3rem;
   align-items: center;
 `;
 
@@ -48,12 +48,13 @@ const Skills = () => {
 
   const content = skills.map(({ title, badges }) => {
     const badgeComponents = badges.map((badge) => (
-      <BadgeTile
+      <Badge
         key={badge.icon.iconId}
         href={badge.href}
-        idleSrc={badge.icon.idleSrc}
-        activeSrc={badge.icon.activeSrc}
-        alt={badge.icon.alt}
+        label={badge.icon.name}
+        iconSrc={badge.icon.activeSrc}
+        iconAlt={badge.icon.alt}
+        iconForceRound={badge.icon.forceRound}
       />
     ));
 

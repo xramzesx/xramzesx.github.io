@@ -21,6 +21,7 @@ const getBadges = (badges: BadgeData[]): ResolvedBadge[] =>
           alt: icon.name,
           ...icon,
           ...getIconSources(iconId),
+          forceRound: icon.forceRound === true,
         },
         href,
       };

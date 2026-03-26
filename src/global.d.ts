@@ -1,10 +1,15 @@
-type IconId = string;
+/// GENERAL ///
+
+type Theme = "dark" | "light";
 
 /// FROM DATASOURCES ///
+
+type IconId = string;
 
 type IconData = {
   iconId: IconId;
   name: string;
+  forceRound?: boolean;
 };
 
 type BadgeData = {
@@ -40,6 +45,7 @@ type ResolvedIcon = {
   idleSrc: string;
   name: string;
   alt: string;
+  forceRound: boolean;
 };
 
 type ResolvedBadge = {
