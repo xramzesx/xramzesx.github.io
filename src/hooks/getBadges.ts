@@ -12,18 +12,15 @@ const getIconSources = (iconId: IconId) => {
   };
 };
 
-const getBadges = (badges: BadgeData[]): ResolvedBadge[] =>
+const getBadges = (badges: IconId[]): ResolvedIcon[] =>
   badges
-    .map(({ iconId, href }) => {
+    .map((iconId) => {
       const icon = iconsMap.get(iconId)!;
       return {
-        icon: {
-          alt: icon.name,
-          ...icon,
-          ...getIconSources(iconId),
-          forceRound: icon.forceRound === true,
-        },
-        href,
+        alt: icon.name,
+        ...icon,
+        ...getIconSources(iconId),
+        forceRound: icon.forceRound === true,
       };
     })
     .filter(Boolean);

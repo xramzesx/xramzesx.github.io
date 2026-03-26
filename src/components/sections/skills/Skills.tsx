@@ -49,12 +49,12 @@ const Skills = () => {
   const content = skills.map(({ title, badges }) => {
     const badgeComponents = badges.map((badge) => (
       <Badge
-        key={badge.icon.iconId}
+        key={badge.iconId}
         href={badge.href}
-        label={badge.icon.name}
-        iconSrc={badge.icon.activeSrc}
-        iconAlt={badge.icon.alt}
-        iconForceRound={badge.icon.forceRound}
+        label={badge.name}
+        iconSrc={badge.activeSrc}
+        iconAlt={badge.alt}
+        iconForceRound={badge.forceRound}
       />
     ));
 

@@ -1,44 +1,218 @@
 [
-    { "iconId" : "javascript", "name": "JavaScript", "forceRound": true },
-    { "iconId" : "typescript", "name": "TypeScript", "forceRound": true },
-    { "iconId" : "html", "name": "HTML" },
-    { "iconId" : "css", "name": "CSS" },
-    { "iconId" : "scss", "name": "SCSS" },
-    { "iconId" : "java", "name": "Java" },
-    { "iconId" : "kotlin", "name": "Kotlin" },
-    { "iconId" : "c", "name": "C" },
-    { "iconId" : "cpp", "name": "C++" },
-    { "iconId" : "bash", "name": "Bash" },
-    { "iconId" : "powershell", "name": "Powershell" },
-    { "iconId" : "react", "name": "React" },
-    { "iconId" : "react-native", "name": "React Native" },
-    { "iconId" : "metro", "name": "Metro" },
-    { "iconId" : "expo", "name": "Expo" },
-    { "iconId" : "threejs", "name": "Three.js" },
-    { "iconId" : "jest", "name": "Jest" },
-    { "iconId" : "eslint", "name": "ESLint" },
-    { "iconId" : "nodejs", "name": "Node.js" },
-    { "iconId" : "expressjs", "name": "Express.js" },
-    { "iconId" : "prisma", "name": "Prisma" },
-    { "iconId" : "grpc", "name": "gRPC" },
-    { "iconId" : "postgres", "name": "PostgreSQL" },
-    { "iconId" : "mysql", "name": "MySQL" },
-    { "iconId" : "tsql", "name": "T-SQL" },
-    { "iconId" : "mongodb", "name": "MongoDB" },
-    { "iconId" : "git", "name": "Git" },
-    { "iconId" : "docker", "name": "Docker" },
-    { "iconId" : "opentelemetry", "name": "Open Telemetry" },
-    { "iconId" : "jenkins", "name": "Jenkins" },
-    { "iconId" : "github-actions", "name": "GitHub Actions" },
-    { "iconId" : "figma", "name": "Figma" },
-    { "iconId" : "affinity", "name": "Affinity", "forceRound": true },
-    { "iconId" : "photoshop", "name": "Photoshop", "forceRound": true },
-    { "iconId" : "after-effects", "name": "After Effects", "forceRound": true },
-    { "iconId" : "premiere-pro", "name": "Premiere Pro", "forceRound": true },
-    { "iconId" : "blender", "name": "Blender" },
-    { "iconId" : "rust", "name": "Rust" },
-    { "iconId" : "csharp", "name": "C#" },
-    { "iconId" : "erlang", "name": "Erlang" },
-    { "iconId" : "elixir", "name": "Elixir" },
-    { "iconId" : "assembly", "name": "Assembly x86" }
+    { 
+        "iconId" : "javascript", 
+        "name": "JavaScript", 
+        "forceRound": true, 
+        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    },
+    { 
+        "iconId" : "typescript", 
+        "name": "TypeScript", 
+        "forceRound": true, 
+        "href": "https://www.typescriptlang.org/"
+    },
+    { 
+        "iconId" : "html", 
+        "name": "HTML", 
+        "href": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+    },
+    { 
+        "iconId" : "css", 
+        "name": "CSS", 
+        "href": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+    },
+    { 
+        "iconId" : "scss", 
+        "name": "SCSS", 
+        "href": "https://sass-lang.com/"
+    },
+    { 
+        "iconId" : "java", 
+        "name": "Java", 
+        "href": "https://www.java.com/pl/"
+    },
+    { 
+        "iconId" : "kotlin", 
+        "name": "Kotlin", 
+        "href": "https://kotlinlang.org/"
+    },
+    { 
+        "iconId" : "c", 
+        "name": "C", 
+        "href": "https://www.c-language.org/"
+    },
+    { 
+        "iconId" : "cpp", 
+        "name": "C++", 
+        "href": "https://cppreference.com/"
+    },
+    { 
+        "iconId" : "bash", 
+        "name": "Bash", 
+        "href": "https://www.gnu.org/software/bash/"
+    },
+    { 
+        "iconId" : "powershell", 
+        "name": "Powershell", 
+        "href": "https://learn.microsoft.com/en-us/powershell/"
+    },
+    { 
+        "iconId" : "react", 
+        "name": "React", 
+        "href": "https://react.dev/"
+    },
+    { 
+        "iconId" : "react-native", 
+        "name": "React Native", 
+        "href": "https://reactnative.dev/"
+    },
+    { 
+        "iconId" : "metro", 
+        "name": "Metro", 
+        "href": "https://metrobundler.dev/"
+    },
+    { 
+        "iconId" : "expo", 
+        "name": "Expo", 
+        "href": "https://expo.dev"
+    },
+    { 
+        "iconId" : "threejs", 
+        "name": "Three.js", 
+        "href": "https://threejs.org/"
+    },
+    { 
+        "iconId" : "jest", 
+        "name": "Jest", 
+        "href": "https://jestjs.io/"
+    },
+    { 
+        "iconId" : "eslint", 
+        "name": "ESLint", 
+        "href": "https://nodejs.org/"
+    },
+    { 
+        "iconId" : "nodejs", 
+        "name": "Node.js", 
+        "href": "https://expressjs.com/"
+    },
+    { 
+        "iconId" : "expressjs", 
+        "name": "Express.js", 
+        "href": "https://www.prisma.io/"
+    },
+    { 
+        "iconId" : "prisma", 
+        "name": "Prisma", 
+        "href": "https://grpc.io/"
+    },
+    { 
+        "iconId" : "grpc", 
+        "name": "gRPC", 
+        "href": "https://www.postgresql.org/"
+    },
+    { 
+        "iconId" : "postgres", 
+        "name": "PostgreSQL", 
+        "href": "https://www.mysql.com/"
+    },
+    { 
+        "iconId" : "mysql", 
+        "name": "MySQL", 
+        "href": "https://learn.microsoft.com/en-us/sql/t-sql/language-reference"
+    },
+    { 
+        "iconId" : "tsql", 
+        "name": "T-SQL", 
+        "href": "https://www.mongodb.com/"
+    },
+    { 
+        "iconId" : "mongodb", 
+        "name": "MongoDB", 
+        "href": "https://git-scm.com/"
+    },
+    { 
+        "iconId" : "git", 
+        "name": "Git", 
+        "href": "https://www.docker.com/"
+    },
+    { 
+        "iconId" : "docker", 
+        "name": "Docker", 
+        "href": "https://opentelemetry.io/"
+    },
+    { 
+        "iconId" : "opentelemetry", 
+        "name": "Open Telemetry", 
+        "href": "https://www.jenkins.io/"
+    },
+    { 
+        "iconId" : "jenkins", 
+        "name": "Jenkins", 
+        "href": "https://github.com/features/actions"
+    },
+    { 
+        "iconId" : "github-actions", 
+        "name": "GitHub Actions", 
+        "href": "https://eslint.org/"
+    },
+    { 
+        "iconId" : "figma", 
+        "name": "Figma", 
+        "href": "https://www.figma.com/"
+    },
+    { 
+        "iconId" : "affinity", 
+        "name": "Affinity", 
+        "forceRound": true, 
+        "href": "https://www.affinity.studio/"
+    },
+    { 
+        "iconId" : "photoshop", 
+        "name": "Photoshop", 
+        "forceRound": true, 
+        "href": "https://www.adobe.com/products/photoshop.html"
+    },
+    { 
+        "iconId" : "after-effects", 
+        "name": "After Effects", 
+        "forceRound": true, 
+        "href": "https://www.adobe.com/products/aftereffects.html"
+    },
+    { 
+        "iconId" : "premiere-pro", 
+        "name": "Premiere Pro", 
+        "forceRound": true, 
+        "href": "https://www.adobe.com/products/premiere.html"
+    },
+    { 
+        "iconId" : "blender", 
+        "name": "Blender", 
+        "href": "https://www.blender.org/"
+    },
+    { 
+        "iconId" : "rust", 
+        "name": "Rust", 
+        "href": "https://rust-lang.org/"
+    },
+    { 
+        "iconId" : "csharp", 
+        "name": "C#", 
+        "href": "https://learn.microsoft.com/en-us/dotnet/csharp/"
+    },
+    { 
+        "iconId" : "erlang", 
+        "name": "Erlang", 
+        "href": "https://www.erlang.org/"
+    },
+    { 
+        "iconId" : "elixir", 
+        "name": "Elixir", 
+        "href": "https://elixir-lang.org/"
+    },
+    { 
+        "iconId" : "assembly", 
+        "name": "Assembly x86", 
+        "href": "https://github.com/qb40/masm/"
+    }
 ]

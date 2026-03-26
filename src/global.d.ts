@@ -10,31 +10,36 @@ type IconData = {
   iconId: IconId;
   name: string;
   forceRound?: boolean;
-};
-
-type BadgeData = {
-  iconId: string;
   href: string;
 };
 
 type SkillData = {
   title: string;
-  badges: BadgeData[];
+  badges: IconId[];
+};
+
+type ProjectLabel = "web" | "mobile" | "game" | "backend" | "devops" | "school";
+
+type Period = {
+  from: string;
+  to?: string;
 };
 
 type ProjectData = {
   projectId: string;
 
   name: string;
-  category: string;
   description: string;
-  stack: BadgeData[];
+  period: Period;
 
-  logoUrl?: string;
-  logoAlt?: string;
+  labels: ProjectLabel[];
+  stack: IconId[];
 
+  comingSoon?: boolean;
   repoUrl?: string;
   demoUrl?: string;
+  logoUrl?: string;
+  thumbnailUrl?: string;
 };
 
 /// RESOLVED ///
@@ -46,14 +51,10 @@ type ResolvedIcon = {
   name: string;
   alt: string;
   forceRound: boolean;
-};
-
-type ResolvedBadge = {
-  icon: ResolvedIcon;
   href: string;
 };
 
 type ResolvedSkill = {
   title: string;
-  badges: ResolvedBadge[];
+  badges: ResolvedIcon[];
 };
