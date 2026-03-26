@@ -116,15 +116,19 @@ const Hero = () => {
           <LinksContainer>
             <Link
               href="https://www.linkedin.com/in/jakubkedra/"
+              label="@jakubkedra"
+              theme="dark"
+              size="large"
               iconSrc={linkedInIcon}
               iconAlt="LN"
-              label="@jakubkedra"
             />
             <Link
               href="https://github.com/xramzesx"
+              label="@xramzesx"
+              theme="dark"
+              size="large"
               iconSrc={githubIcon}
               iconAlt="GH"
-              label="@xramzesx"
             />
           </LinksContainer>
         </Content>
