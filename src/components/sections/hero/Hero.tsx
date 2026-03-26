@@ -78,8 +78,8 @@ const Info = styled.p`
 const Image = styled.img`
   height: calc(100svh - 2rem);
 
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
   margin: 0 2rem;
 
   user-select: none;
