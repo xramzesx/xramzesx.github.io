@@ -1,17 +1,7 @@
 import Container from "@/components/layout/Container";
 import styled from "styled-components";
 import BadgeTile from "@/components/common/BadgeTile";
-import jsIcon from "@/assets/img/icons/javascript-flat.svg";
-
-const mockedSkill = {
-  href: "https://skillicons.dev/icons?i=js",
-
-  idleSrc: jsIcon,
-  activeSrc:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg",
-
-  alt: "js",
-};
+import { useSkills } from "@/hooks/useSkills";
 
 const Wrapper = styled.section`
   display: flex;
@@ -23,7 +13,8 @@ const Wrapper = styled.section`
 `;
 
 const Header = styled.h1`
-  text-align: center;
+  /* text-align: center; */
+  padding: 0 2rem;
   color: white;
 `;
 
@@ -34,30 +25,49 @@ const BadgesContainer = styled.div`
   padding: 1rem 2rem;
   gap: 0.5rem;
   flex-wrap: wrap;
-  max-width: calc(15 * 3rem + 14 * 0.5rem + 4rem);
-  align-self: center;
+  max-width: calc(11 * 3rem + 10 * 0.5rem + 4rem);
+  /* align-self: center; */
+`;
+
+const SectionContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: calc(11 * 3rem + 10 * 0.5rem + 4rem);
+  width: 100%;
+  align-items: start;
+`;
+
+const StyledContainer = styled(Container)`
+  gap: 4rem;
+  align-items: center;
 `;
 
 const Skills = () => {
-  // TODO: Replace mocked data with data from external source/JSON
-  const mockedData = Array.from({ length: 25 }, () => ({ ...mockedSkill }));
-  const badges = mockedData.map((data) => (
-    <BadgeTile
-      href={data.href}
-      idleSrc={data.idleSrc}
-      activeSrc={data.activeSrc}
-      alt={data.alt}
-    />
-  ));
+  const skills = useSkills();
+
+  const content = skills.map(({ title, badges }) => {
+    const badgeComponents = badges.map((badge) => (
+      <BadgeTile
+        key={badge.icon.iconId}
+        href={badge.href}
+        idleSrc={badge.icon.idleSrc}
+        activeSrc={badge.icon.activeSrc}
+        alt={badge.icon.alt}
+      />
+    ));
+
+    return (
+      <SectionContainer>
+        <Header>{title}</Header>
+        <BadgesContainer>{badgeComponents}</BadgesContainer>
+      </SectionContainer>
+    );
+  });
 
   return (
     <Wrapper>
-      <Container heightType="page">
-        <Header>Languages</Header>
-        <BadgesContainer>{badges}</BadgesContainer>
-        <Header>Technologies</Header>
-        <BadgesContainer>{badges}</BadgesContainer>
-      </Container>
+      <StyledContainer heightType="page">{content}</StyledContainer>
     </Wrapper>
   );
 };
