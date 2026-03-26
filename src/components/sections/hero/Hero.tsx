@@ -4,6 +4,7 @@ import hero from "@/assets/img/hero.jpg";
 import githubIcon from "@/assets/img/icons/github.svg";
 import linkedInIcon from "@/assets/img/icons/linkedin.svg";
 import { media } from "@/constants/breakpoints";
+import Link from "@/components/common/Link";
 
 const Wrapper = styled.section`
   display: flex;
@@ -89,47 +90,16 @@ const Image = styled.img`
     object-fit: cover;
     object-position: top center;
 
-    height: 50vw;
-    width: 50vw;
+    height: max(min(20rem, 50vw), 15rem);
+    width: max(min(20rem, 50vw), 15rem);
+    /* height: 50vw; */
+    /* width: 50vw; */
     border-radius: 50vh;
   }
 `;
 
 const LinksContainer = styled.div`
   padding-top: 0.25rem;
-`;
-
-const Link = styled.a`
-  font-size: 1.25rem;
-  text-decoration: none;
-
-  padding: 0.5rem 0.25rem;
-  display: inline-flex;
-  color: black;
-  align-items: center;
-  justify-content: center;
-  gap: calc(0.25rem * 1.5);
-
-  &:hover span {
-    text-underline-offset: 0.5rem;
-    text-decoration-color: #000;
-  }
-`;
-
-const LinkLabel = styled.span`
-  text-decoration: underline;
-  text-underline-offset: 0.25rem;
-  text-decoration-thickness: 0.2rem;
-  text-decoration-color: #ddd;
-  transition:
-    text-underline-offset 0.25s ease,
-    text-decoration-color 0.25s ease,
-    text-decoration-thickness 0.25s ease;
-`;
-
-const Icon = styled.img`
-  height: 1.25rem;
-  width: 1.25rem;
 `;
 
 const Hero = () => {
@@ -146,15 +116,16 @@ const Hero = () => {
           <LinksContainer>
             <Link
               href="https://www.linkedin.com/in/jakubkedra/"
-              target="_blank"
-            >
-              <Icon src={linkedInIcon} alt="GH" draggable={false} />
-              <LinkLabel>@jakubkedra</LinkLabel>
-            </Link>
-            <Link href="https://github.com/xramzesx" target="_blank">
-              <Icon src={githubIcon} alt="GH" draggable={false} />
-              <LinkLabel>@xramzesx</LinkLabel>
-            </Link>
+              iconSrc={linkedInIcon}
+              iconAlt="LN"
+              label="@jakubkedra"
+            />
+            <Link
+              href="https://github.com/xramzesx"
+              iconSrc={githubIcon}
+              iconAlt="GH"
+              label="@xramzesx"
+            />
           </LinksContainer>
         </Content>
 
