@@ -4,47 +4,47 @@
         "badges": [
             {
                 "iconId" : "javascript",
-                "href": ""
+                "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
             },
             {
                 "iconId" : "typescript",
-                "href": ""
+                "href": "https://www.typescriptlang.org/"
             },
             {
                 "iconId" : "html",
-                "href": ""
+                "href": "https://developer.mozilla.org/en-US/docs/Web/HTML"
             },
             {
                 "iconId" : "css",
-                "href": ""
+                "href": "https://developer.mozilla.org/en-US/docs/Web/CSS"
             },
             {
                 "iconId" : "scss",
-                "href": ""
+                "href": "https://sass-lang.com/"
             },
             {
                 "iconId" : "java",
-                "href": ""
+                "href": "https://www.java.com/pl/"
             },
             {
                 "iconId" : "kotlin",
-                "href": ""
+                "href": "https://kotlinlang.org/"
             },
             {
                 "iconId" : "c",
-                "href": ""
+                "href": "https://www.c-language.org/"
             },
             {
                 "iconId" : "cpp",
-                "href": ""
+                "href": "https://cppreference.com/"
             },
             {
                 "iconId" : "bash",
-                "href": ""
+                "href": "https://www.gnu.org/software/bash/"
             },
             {
                 "iconId" : "powershell",
-                "href": ""
+                "href": "https://learn.microsoft.com/en-us/powershell/"
             }
         ]
     },
@@ -53,31 +53,27 @@
         "badges": [
             {
                 "iconId" : "react",
-                "href": ""
+                "href": "https://react.dev/"
             },
             {
                 "iconId" : "react-native",
-                "href": ""
+                "href": "https://reactnative.dev/"
             },
             {
                 "iconId" : "metro",
-                "href": ""
+                "href": "https://metrobundler.dev/"
             },
             {
                 "iconId" : "expo",
-                "href": ""
+                "href": "https://expo.dev"
             },
             {
                 "iconId" : "threejs",
-                "href": ""
+                "href": "https://threejs.org/"
             },
             {
                 "iconId" : "jest",
-                "href": ""
-            },
-            {
-                "iconId" : "eslint",
-                "href": ""
+                "href": "https://jestjs.io/"
             }
 
         ]
@@ -87,35 +83,35 @@
         "badges": [
             {
                 "iconId" : "nodejs",
-                "href": ""
+                "href": "https://nodejs.org/"
             },
             {
                 "iconId" : "expressjs",
-                "href": ""
+                "href": "https://expressjs.com/"
             },
             {
                 "iconId" : "prisma",
-                "href": ""
+                "href": "https://www.prisma.io/"
             },
             {
                 "iconId" : "grpc",
-                "href": ""
+                "href": "https://grpc.io/"
             },
             {
                 "iconId" : "postgres",
-                "href": ""
+                "href": "https://www.postgresql.org/"
             },
             {
                 "iconId" : "mysql",
-                "href": ""
+                "href": "https://www.mysql.com/"
             },
             {
                 "iconId" : "tsql",
-                "href": ""
+                "href": "https://learn.microsoft.com/en-us/sql/t-sql/language-reference"
             },
             {
                 "iconId" : "mongodb",
-                "href": ""
+                "href": "https://www.mongodb.com/"
             }
         ]
     },
@@ -124,47 +120,51 @@
         "badges": [
             {
                 "iconId" : "git",
-                "href": ""
+                "href": "https://git-scm.com/"
             },
             {
                 "iconId" : "docker",
-                "href": ""
+                "href": "https://www.docker.com/"
             },
             {
                 "iconId" : "opentelemetry",
-                "href": ""
+                "href": "https://opentelemetry.io/"
             },
             {
                 "iconId" : "jenkins",
-                "href": ""
+                "href": "https://www.jenkins.io/"
             },
             {
                 "iconId" : "github-actions",
-                "href": ""
+                "href": "https://github.com/features/actions"
+            },
+            {
+                "iconId" : "eslint",
+                "href": "https://eslint.org/"
             },
             {
                 "iconId" : "figma",
-                "href": ""
+                "href": "https://ww"
             },
             {
                 "iconId" : "affinity",
-                "href": ""
+                "href": "https://www.affinity.studio/"
             },
             {
                 "iconId" : "photoshop",
-                "href": ""
+                "href": "https://www.adobe.com/products/photoshop.html"
             },
             {
                 "iconId" : "after-effects",
-                "href": ""
+                "href": "https://www.adobe.com/products/aftereffects.html"
             },
             {
                 "iconId" : "premiere-pro",
-                "href": ""
+                "href": "https://www.adobe.com/products/premiere.html"
             },
             {
                 "iconId" : "blender",
-                "href": ""
+                "href": "https://www.blender.org/"
             }
         ]
     },
@@ -173,23 +173,23 @@
         "badges": [
             {
                 "iconId" : "rust",
-                "href": ""
+                "href": "https://rust-lang.org/"
             },
             {
                 "iconId" : "csharp",
-                "href": ""
+                "href": "https://learn.microsoft.com/en-us/dotnet/csharp/"
             },
             {
                 "iconId" : "erlang",
-                "href": ""
+                "href": "https://www.erlang.org/"
             },
             {
                 "iconId" : "elixir",
-                "href": ""
+                "href": "https://elixir-lang.org/"
             },
             {
                 "iconId" : "assembly",
-                "href": ""
+                "href": "https://github.com/qb40/masm/"
             }
         ]
     }
