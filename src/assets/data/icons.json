@@ -29,7 +29,7 @@
     { 
         "iconId" : "java", 
         "name": "Java", 
-        "href": "https://www.java.com/pl/"
+        "href": "https://www.java.com/"
     },
     { 
         "iconId" : "kotlin", 
@@ -94,67 +94,67 @@
     { 
         "iconId" : "nodejs", 
         "name": "Node.js", 
-        "href": "https://expressjs.com/"
+        "href": "https://nodejs.org/"
     },
     { 
         "iconId" : "expressjs", 
         "name": "Express.js", 
-        "href": "https://www.prisma.io/"
+        "href": "https://expressjs.com/"
     },
     { 
         "iconId" : "prisma", 
         "name": "Prisma", 
-        "href": "https://grpc.io/"
+        "href": "https://www.prisma.io/"
     },
     { 
         "iconId" : "grpc", 
         "name": "gRPC", 
-        "href": "https://www.postgresql.org/"
+        "href": "https://grpc.io/"
     },
     { 
         "iconId" : "postgres", 
         "name": "PostgreSQL", 
-        "href": "https://www.mysql.com/"
+        "href": "https://www.postgresql.org/"
     },
     { 
         "iconId" : "mysql", 
         "name": "MySQL", 
-        "href": "https://learn.microsoft.com/en-us/sql/t-sql/language-reference"
+        "href": "https://www.mysql.com/"
     },
     { 
         "iconId" : "tsql", 
         "name": "T-SQL", 
-        "href": "https://www.mongodb.com/"
+        "href": "https://learn.microsoft.com/en-us/sql/t-sql/language-reference"
     },
     { 
         "iconId" : "mongodb", 
         "name": "MongoDB", 
-        "href": "https://git-scm.com/"
+        "href": "https://www.mongodb.com/"
     },
     { 
         "iconId" : "git", 
         "name": "Git", 
-        "href": "https://www.docker.com/"
+        "href": "https://git-scm.com/"
     },
     { 
         "iconId" : "docker", 
         "name": "Docker", 
-        "href": "https://opentelemetry.io/"
+        "href": "https://www.docker.com/"
     },
     { 
         "iconId" : "opentelemetry", 
         "name": "Open Telemetry", 
-        "href": "https://www.jenkins.io/"
+        "href": "https://opentelemetry.io/"
     },
     { 
         "iconId" : "jenkins", 
         "name": "Jenkins", 
-        "href": "https://github.com/features/actions"
+        "href": "https://www.jenkins.io/"
     },
     { 
         "iconId" : "github-actions", 
         "name": "GitHub Actions", 
-        "href": "https://eslint.org/"
+        "href": "https://github.com/features/actions"
     },
     { 
         "iconId" : "figma", 
