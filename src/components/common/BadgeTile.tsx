@@ -6,15 +6,14 @@ const TileImage = styled.img`
   left: 0;
   right: 0;
   position: absolute;
+  transition: opacity 0.25s ease;
 `;
 
 const IdleTileImage = styled(TileImage)`
-  filter: saturate(0) brightness(75%); /* biały → czarny */
+  filter: saturate(0) brightness(75%);
 `;
 
 const ActiveTileImage = styled(TileImage)`
-  transition: opacity 0.25s ease;
-
   opacity: 0;
 `;
 
@@ -34,6 +33,10 @@ const Tile = styled.a`
   &:hover ${ActiveTileImage} {
     opacity: 1;
   }
+
+  &:hover ${IdleTileImage} {
+    opacity: 0;
+  }
 `;
 
 type Props = {
@@ -42,6 +45,8 @@ type Props = {
   activeSrc: string;
   alt: string;
 };
+
+// TODO: Add skeletons
 
 const BadgeTile = ({ href, idleSrc, activeSrc, alt }: Props) => {
   return (
