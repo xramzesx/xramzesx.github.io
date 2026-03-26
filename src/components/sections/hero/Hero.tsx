@@ -13,6 +13,7 @@ const Wrapper = styled.section`
 `;
 
 const Background = styled.div`
+  pointer-events: none;
   background-image: radial-gradient(
     circle at 1px 1px,
     currentColor 1px,
