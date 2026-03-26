@@ -1,0 +1,242 @@
+[
+  {
+    "projectId": "elevator-system",
+    "name": "elevator-system",
+    "repoUrl": "https://github.com/xramzesx/elevator-system",
+    "description": "Real-time elevator system simulator featuring a custom finite state machine algorithm for optimal floor scheduling, built with Java Spring & React",
+    "period": {
+      "from": "2023-07",
+      "to": "2024-02"
+    },
+    "labels": [],
+    "stack": []
+  },
+  {
+    "projectId": "differential-equations-fem",
+    "name": "differential-equations-fem",
+    "repoUrl": "https://github.com/xramzesx/differential-equations-fem",
+    "description": "Repo for Differential Equation course project",
+    "period": {
+      "from": "2023-01",
+      "to": "2023-03"
+    },
+    "labels": [],
+    "stack": []
+  },
+  {
+    "projectId": "suu-project",
+    "name": "suu-project",
+    "repoUrl": "https://github.com/xramzesx/suu-project",
+    "description": null,
+    "period": {
+      "from": "2025-04",
+      "to": "2025-06"
+    },
+    "labels": [],
+    "stack": []
+  },
+  {
+    "projectId": "digital-image-processing",
+    "name": "digital-image-processing",
+    "repoUrl": "https://github.com/xramzesx/digital-image-processing",
+    "description": "This repository contains assignments & notebooks related to Introduction to Digital Image Processing course at AGH UST",
+    "period": {
+      "from": "2023-10",
+      "to": "2024-06"
+    },
+    "labels": [],
+    "stack": []
+  },
+  {
+    "projectId": "artificial-intelligence-course",
+    "name": "artificial-intelligence-course",
+    "repoUrl": "https://github.com/xramzesx/artificial-intelligence-course",
+    "description": "This repository contains assignments & notebooks related to Introduction to Artificial Intelligence course",
+    "period": {
+      "from": "2023-10",
+      "to": "2024-02"
+    },
+    "labels": [],
+    "stack": []
+  },
+  {
+    "projectId": "mownit-agh-2023",
+    "name": "mownit-agh-2023",
+    "repoUrl": "https://github.com/xramzesx/mownit-agh-2023",
+    "description": "This repository contains tasks and projects for MOWNiT (Methods of Computational Science and Technology), a course focused on numerical methods and their applications in science and engineering. ",
+    "period": {
+      "from": "2023-03",
+      "to": "2023-06"
+    },
+    "labels": [],
+    "stack": []
+  },
+  {
+    "projectId": "operating-systems",
+    "name": "operating-systems",
+    "repoUrl": "https://github.com/xramzesx/operating-systems",
+    "description": "Repo for Operating Systems course exercises",
+    "period": {
+      "from": "2023-03",
+      "to": "2023-06"
+    },
+    "labels": [],
+    "stack": []
+  },
+  {
+    "projectId": "assembly-x86",
+    "name": "assembly-x86",
+    "repoUrl": "https://github.com/xramzesx/assembly-x86",
+    "description": "Repo for Assembler 8086 course projects",
+    "period": {
+      "from": "2023-03",
+      "to": "2023-06"
+    },
+    "labels": [],
+    "stack": []
+  },
+  {
+    "projectId": "oolab-darwin-simulator",
+    "name": "oolab-darwin-simulator",
+    "repoUrl": "https://github.com/xramzesx/oolab-darwin-simulator",
+    "description": null,
+    "period": {
+      "from": "2022-12",
+      "to": "2023-03"
+    },
+    "labels": [],
+    "stack": []
+  },
+  {
+    "projectId": "git-lab",
+    "name": "git-lab",
+    "repoUrl": "https://github.com/xramzesx/git-lab",
+    "description": "Example project to work with git for 'Object Programming' course",
+    "period": {
+      "from": "2022-10",
+      "to": "2022-10"
+    },
+    "labels": [],
+    "stack": []
+  },
+  {
+    "projectId": "asd-agh-2022",
+    "name": "asd-agh-2022",
+    "repoUrl": "https://github.com/xramzesx/asd-agh-2022",
+    "description": "Solutions and notes for Algorithms and Data Structures (ASD) homeworks",
+    "period": {
+      "from": "2022-03",
+      "to": "2023-03"
+    },
+    "labels": [],
+    "stack": []
+  },
+  {
+    "projectId": "oolab",
+    "name": "oolab",
+    "repoUrl": "https://github.com/xramzesx/oolab",
+    "description": "Repo for 'Object Programming' course",
+    "period": {
+      "from": "2022-10",
+      "to": "2022-11"
+    },
+    "labels": [],
+    "stack": []
+  },
+  {
+    "projectId": "hex3d-playground",
+    "name": "hex3d-playground",
+    "repoUrl": "https://github.com/xramzesx/hex3d-playground",
+    "description": "My playground for learning JavaScript, NodeJS, ThreeJS and so on",
+    "period": {
+      "from": "2022-04",
+      "to": "2022-04"
+    },
+    "labels": [],
+    "stack": []
+  },
+  {
+    "projectId": "minesweeper",
+    "name": "minesweeper",
+    "repoUrl": "https://github.com/xramzesx/minesweeper",
+    "description": "JavaScript version of cult Windows game Minesweeper",
+    "period": {
+      "from": "2022-04",
+      "to": "2022-04"
+    },
+    "labels": [],
+    "stack": []
+  },
+  {
+    "projectId": "snake-game",
+    "name": "snake-game",
+    "repoUrl": "https://github.com/xramzesx/snake-game",
+    "description": "JavaScript version of popular Snake game",
+    "period": {
+      "from": "2022-04",
+      "to": "2022-04"
+    },
+    "labels": [],
+    "stack": []
+  },
+  {
+    "projectId": "marbles-game",
+    "name": "marbles-game",
+    "repoUrl": "https://github.com/xramzesx/marbles-game",
+    "description": "Marbles game written in TypeScript",
+    "period": {
+      "from": "2022-04",
+      "to": "2023-04"
+    },
+    "labels": [],
+    "stack": []
+  },
+  {
+    "projectId": "cineflix",
+    "name": "cineflix",
+    "repoUrl": "https://github.com/xramzesx/cineflix",
+    "description": "Basic ticket reservation system written in React and PHP",
+    "period": {
+      "from": "2022-04",
+      "to": "2022-04"
+    },
+    "labels": [],
+    "stack": []
+  },
+  {
+    "projectId": "pacman-the-poor-map-editor",
+    "name": "pacman-the-poor-map-editor",
+    "repoUrl": "https://github.com/xramzesx/pacman-the-poor-map-editor",
+    "description": "Web map editor/generator for my poor version of Pacman game",
+    "period": {
+      "from": "2022-04",
+      "to": "2022-04"
+    },
+    "labels": [],
+    "stack": []
+  },
+  {
+    "projectId": "pacman-the-poor-game",
+    "name": "pacman-the-poor-game",
+    "repoUrl": "https://github.com/xramzesx/pacman-the-poor-game",
+    "description": "JavaScript poor version of Pacman arcade game",
+    "period": {
+      "from": "2022-04",
+      "to": "2022-04"
+    },
+    "labels": [],
+    "stack": []
+  },
+  {
+    "projectId": "xramzesx.github.io",
+    "name": "xramzesx.github.io",
+    "repoUrl": "https://github.com/xramzesx/xramzesx.github.io",
+    "description": "My main website",
+    "period": {
+      "from": "2020-11",
+      "to": "2026-03"
+    },
+    "labels": [],
+    "stack": []
+  }
+]
