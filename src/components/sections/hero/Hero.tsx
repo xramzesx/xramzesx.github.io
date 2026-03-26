@@ -9,6 +9,25 @@ const Wrapper = styled.section`
   display: flex;
   width: 100%;
   justify-content: center;
+  position: relative;
+`;
+
+const Background = styled.div`
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    currentColor 1px,
+    transparent 0
+  );
+  background-size: 15px 15px;
+  background-position-x: 7.5px;
+  background-position-y: 7.5px;
+  opacity: 8%;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 `;
 
 const HeroContainer = styled(Container)`
@@ -115,6 +134,7 @@ const Icon = styled.img`
 const Hero = () => {
   return (
     <Wrapper>
+      <Background />
       <HeroContainer heightType="page">
         <Content>
           <Title> Jakub Kędra </Title>
