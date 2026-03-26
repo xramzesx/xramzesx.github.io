@@ -1,0 +1,197 @@
+[
+    {
+        "title" : "Main Languages",
+        "badges": [
+            {
+                "iconId" : "javascript",
+                "href": ""
+            },
+            {
+                "iconId" : "typescript",
+                "href": ""
+            },
+            {
+                "iconId" : "html",
+                "href": ""
+            },
+            {
+                "iconId" : "css",
+                "href": ""
+            },
+            {
+                "iconId" : "scss",
+                "href": ""
+            },
+            {
+                "iconId" : "java",
+                "href": ""
+            },
+            {
+                "iconId" : "kotlin",
+                "href": ""
+            },
+            {
+                "iconId" : "c",
+                "href": ""
+            },
+            {
+                "iconId" : "cpp",
+                "href": ""
+            },
+            {
+                "iconId" : "bash",
+                "href": ""
+            },
+            {
+                "iconId" : "powershell",
+                "href": ""
+            }
+        ]
+    },
+    {
+        "title": "Mobile & Frontend",
+        "badges": [
+            {
+                "iconId" : "react",
+                "href": ""
+            },
+            {
+                "iconId" : "react-native",
+                "href": ""
+            },
+            {
+                "iconId" : "metro",
+                "href": ""
+            },
+            {
+                "iconId" : "expo",
+                "href": ""
+            },
+            {
+                "iconId" : "threejs",
+                "href": ""
+            },
+            {
+                "iconId" : "jest",
+                "href": ""
+            },
+            {
+                "iconId" : "eslint",
+                "href": ""
+            }
+
+        ]
+    },
+    {
+        "title": "Backend & Databases",
+        "badges": [
+            {
+                "iconId" : "nodejs",
+                "href": ""
+            },
+            {
+                "iconId" : "expressjs",
+                "href": ""
+            },
+            {
+                "iconId" : "prisma",
+                "href": ""
+            },
+            {
+                "iconId" : "grpc",
+                "href": ""
+            },
+            {
+                "iconId" : "postgres",
+                "href": ""
+            },
+            {
+                "iconId" : "mysql",
+                "href": ""
+            },
+            {
+                "iconId" : "tsql",
+                "href": ""
+            },
+            {
+                "iconId" : "mongodb",
+                "href": ""
+            }
+        ]
+    },
+    {
+        "title": "DevOps & Tools",
+        "badges": [
+            {
+                "iconId" : "git",
+                "href": ""
+            },
+            {
+                "iconId" : "docker",
+                "href": ""
+            },
+            {
+                "iconId" : "opentelemetry",
+                "href": ""
+            },
+            {
+                "iconId" : "jenkins",
+                "href": ""
+            },
+            {
+                "iconId" : "github-actions",
+                "href": ""
+            },
+            {
+                "iconId" : "figma",
+                "href": ""
+            },
+            {
+                "iconId" : "affinity",
+                "href": ""
+            },
+            {
+                "iconId" : "photoshop",
+                "href": ""
+            },
+            {
+                "iconId" : "after-effects",
+                "href": ""
+            },
+            {
+                "iconId" : "premiere-pro",
+                "href": ""
+            },
+            {
+                "iconId" : "blender",
+                "href": ""
+            }
+        ]
+    },
+    {
+        "title": "Other technologies I worked with",
+        "badges": [
+            {
+                "iconId" : "rust",
+                "href": ""
+            },
+            {
+                "iconId" : "csharp",
+                "href": ""
+            },
+            {
+                "iconId" : "erlang",
+                "href": ""
+            },
+            {
+                "iconId" : "elixir",
+                "href": ""
+            },
+            {
+                "iconId" : "assembly",
+                "href": ""
+            }
+        ]
+    }
+    
+]
