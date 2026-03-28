@@ -15,7 +15,7 @@ const Wrapper = styled.section`
 const Header = styled.h1`
   /* text-align: center; */
   padding: 0 2rem;
-  color: white;
+  color: #eee;
 `;
 
 const BadgesContainer = styled.div`
@@ -44,7 +44,7 @@ const StyledContainer = styled(Container)`
 `;
 
 const Skills = () => {
-  const skills = useSkills();
+  const skills: ResolvedSkill[] = useSkills();
 
   const content = skills.map(({ title, badges }) => {
     const badgeComponents = badges.map((badge) => (
@@ -55,6 +55,8 @@ const Skills = () => {
         iconSrc={badge.activeSrc}
         iconAlt={badge.alt}
         iconForceRound={badge.forceRound}
+        iconSize="normal"
+        theme="dark"
       />
     ));
 

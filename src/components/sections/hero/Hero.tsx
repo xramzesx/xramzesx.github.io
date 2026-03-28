@@ -17,7 +17,7 @@ const Background = styled.div`
   pointer-events: none;
   background-image: radial-gradient(
     circle at 1px 1px,
-    currentColor 1px,
+    black 1px,
     transparent 0
   );
   background-size: 15px 15px;
@@ -83,6 +83,7 @@ const Image = styled.img`
   margin: 0 2rem;
 
   user-select: none;
+  filter: drop-shadow(#ddd 0rem 0rem 0.5rem);
 
   ${media.mobile} {
     margin-top: 2rem;
