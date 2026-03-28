@@ -41,6 +41,7 @@ const LinkLabel = styled.span<{ $theme: Theme }>`
 const Icon = styled.img`
   height: 1.25rem;
   width: 1.25rem;
+  user-select: none;
 `;
 
 type Props = {
