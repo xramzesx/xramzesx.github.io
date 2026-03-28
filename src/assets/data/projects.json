@@ -1,19 +1,19 @@
 [
   {
     "projectId": "elevator-system",
-    "name": "elevator-system",
+    "name": "Elevator System",
     "repoUrl": "https://github.com/xramzesx/elevator-system",
     "description": "Real-time elevator system simulator featuring a custom finite state machine algorithm for optimal floor scheduling, built with Java Spring & React",
     "period": {
       "from": "2023-07",
-      "to": "2024-02"
+      "to": "2023-07"
     },
     "labels": ["web", "backend", "fullstack"],
     "stack": ["react","typescript", "styled-components", "materialui", "java", "spring"]
   },
   {
     "projectId": "differential-equations-fem",
-    "name": "differential-equations-fem",
+    "name": "Differential Equations FEM",
     "repoUrl": "https://github.com/xramzesx/differential-equations-fem",
     "description": "Finite Element Method solver for a differential equation with mixed boundary conditions, written in Rust - made for Differential Equations course at AGH University",
     "period": {
@@ -25,7 +25,7 @@
   },
   {
     "projectId": "suu-project",
-    "name": "suu-project",
+    "name": "Observability Project",
     "repoUrl": "https://github.com/xramzesx/suu-project",
     "description": "Distributed gRPC system in Python demonstrating observability with OpenTelemetry, Jaeger, Prometheus & Grafana - containerized with Docker",
     "period": {
@@ -37,7 +37,7 @@
   },
   {
     "projectId": "digital-image-processing",
-    "name": "digital-image-processing",
+    "name": "Digital Image Processing",
     "repoUrl": "https://github.com/xramzesx/digital-image-processing",
     "description": "Jupyter notebooks covering digital image processing techniques using Python, NumPy & OpenCV",
     "period": {
@@ -49,7 +49,7 @@
   },
   {
     "projectId": "artificial-intelligence-course",
-    "name": "artificial-intelligence-course",
+    "name": "AI Course",
     "repoUrl": "https://github.com/xramzesx/artificial-intelligence-course",
     "description": "Jupyter notebooks covering ML fundamentals — regression, decision trees, neural networks, CNNs, NLP and recommendation systems",
     "period": {
@@ -61,7 +61,7 @@
   },
   {
     "projectId": "mownit-agh-2023",
-    "name": "mownit-agh-2023",
+    "name": "Numerical Methods Course",
     "repoUrl": "https://github.com/xramzesx/mownit-agh-2023",
     "description": "Numerical methods assignments and reports covering scientific computing algorithms and libraries, built with Python & NumPy.",
     "period": {
@@ -73,7 +73,7 @@
   },
   {
     "projectId": "operating-systems",
-    "name": "operating-systems",
+    "name": "Operating Systems Course",
     "repoUrl": "https://github.com/xramzesx/operating-systems",
     "description": "C assignments covering Unix-like OS mechanics - processes, signals, IPC and filesystems. Each scored full marks.",
     "period": {
@@ -85,7 +85,7 @@
   },
   {
     "projectId": "assembly-x86",
-    "name": "assembly-x86",
+    "name": "Assembly x86",
     "repoUrl": "https://github.com/xramzesx/assembly-x86",
     "description": "MASM x86 projects from Assembly course - verbal calculator parsing word-form expressions and an ellipse renderer in graphics mode",
     "period": {
@@ -93,28 +93,30 @@
       "to": "2023-06"
     },
     "labels": ["school"],
-    "stack": ["assembly"]
+    "stack": ["assembly"],
+    "thumbnailUrl": "thumbnail.gif"
   },
   {
     "projectId": "oolab-darwin-simulator",
-    "name": "oolab-darwin-simulator",
+    "name": "Darwin Simulator",
     "repoUrl": "https://github.com/xramzesx/oolab-darwin-simulator",
     "description": "Darwinian evolution simulator built with Java & JavaFX, featuring configurable maps, animal behavior and natural selection mechanics - made for Object-Oriented Programming course",
     "period": {
       "from": "2022-12",
-      "to": "2023-03"
+      "to": "2022-12"
     },
     "labels": ["school"],
-    "stack": ["java", "javafx"]
+    "stack": ["java", "javafx"],
+    "thumbnailUrl": "thumbnail.png"
   },
   {
     "projectId": "asd-agh-2022",
-    "name": "asd-agh-2022",
+    "name": "Algorithms and Data Structures",
     "repoUrl": "https://github.com/xramzesx/asd-agh-2022",
     "description": "Algorithms and Data Structures homework solutions in Python.",
     "period": {
       "from": "2022-03",
-      "to": "2023-03"
+      "to": "2022-06"
     },
     "labels": ["school"],
     "stack": ["python"]
@@ -137,56 +139,66 @@
     "repoUrl": "https://github.com/xramzesx/hex3d-playground",
     "description": "Interactive 3D playground built with Three.js & Express, exploring mechanics like raycasting, texturing, bump mapping and skyboxes on a hex-based map - made for Client Applications course in 2020",
     "period": {
-      "from": "2022-04",
-      "to": "2022-04"
+      "from": "2020-01",
+      "to": "2020-06"
     },
     "labels": ["school", "web", "backend"],
-    "stack": ["javascript", "threejs", "expressjs"]
+    "stack": ["javascript", "threejs", "expressjs"],
+    "thumbnailUrl": "thumbnail.png"
   },
   {
     "projectId": "minesweeper",
-    "name": "minesweeper",
+    "name": "Minesweeper",
     "repoUrl": "https://github.com/xramzesx/minesweeper",
     "description": "Minesweeper clone with a classic Windows aesthetic, using browser Cookie API for saving leaderboard - made for Client Applications course in 2019",
     "period": {
-      "from": "2022-04",
-      "to": "2022-04"
+      "from": "2019-09",
+      "to": "2019-10"
     },
     "labels": ["web", "school","game"],
-    "stack": ["html", "css", "javascript"]
+    "stack": ["html", "css", "javascript"],
+    "logoUrl": "logo.png",
+    "demoUrl": "https://xramzes.com/minesweeper/",
+    "thumbnailUrl": "thumbnail.png"
   },
   {
     "projectId": "snake-game",
-    "name": "snake-game",
+    "name": "Snake",
     "repoUrl": "https://github.com/xramzesx/snake-game",
     "description": "Snake game built in vanilla JavaScript - made for Client Applications course in 2019",
     "period": {
-      "from": "2022-04",
-      "to": "2022-04"
+      "from": "2019-10",
+      "to": "2019-11"
     },
     "labels": ["web", "school","game"],
-    "stack": ["html", "css", "javascript"]
+    "stack": ["html", "css", "javascript"],
+    "logoUrl": "logo.png",
+    "demoUrl": "https://xramzes.com/snake-game/",
+    "thumbnailUrl" : "snake-thumbnail.png"
   },
   {
     "projectId": "marbles-game",
-    "name": "marbles-game",
+    "name": "Marbles",
     "repoUrl": "https://github.com/xramzesx/marbles-game",
     "description": "Humorous marble game built in pure TypeScript with Webpack - made for Client Applications course in 2020",
     "period": {
-      "from": "2022-04",
-      "to": "2023-04"
+      "from": "2019-12",
+      "to": "2020-02"
     },
     "labels": ["web", "school","game"],
-    "stack": ["html", "css", "javascript", "typescript"]
+    "stack": ["html", "css", "javascript", "typescript"],
+    "logoUrl": "logo.png",
+    "demoUrl": "https://xramzes.com/marbles-game/",
+    "thumbnailUrl": "thumbnail.png"
   },
   {
     "projectId": "cineflix",
-    "name": "cineflix",
+    "name": "CineFlix",
     "repoUrl": "https://github.com/xramzesx/cineflix",
     "description": "Cinema ticket reservation system with a custom CMS, built with React & PHP/MySQL - made for Server Applications course in 2020",
     "period": {
-      "from": "2022-04",
-      "to": "2022-04"
+      "from": "2020-10",
+      "to": "2020-12"
     },
     "labels": ["web", "school","game"],
     "stack": ["javascript", "react", "scss", "mysql", "php"]
@@ -197,23 +209,28 @@
     "repoUrl": "https://github.com/xramzesx/pacman-the-poor-map-editor",
     "description": "Canvas-based map editor for pacman-the-poor-game, supporting custom level design - made for Client Applications course in 2020",
     "period": {
-      "from": "2022-04",
-      "to": "2022-04"
+      "from": "2020-04",
+      "to": "2020-04"
     },
     "labels": ["web", "school", "game"],
-    "stack": ["html", "css", "javascript"]
+    "stack": ["html", "css", "javascript"],
+    "logoUrl": "logo.ico",
+    "demoUrl": "https://xramzes.com/pacman-the-poor-game/"
+
   },
   {
     "projectId": "pacman-the-poor-game",
     "name": "pacman-the-poor-game",
     "repoUrl": "https://github.com/xramzesx/pacman-the-poor-game",
-    "description": "Map editor for my poor version of Pacman game. I coded it in 2020 for Client Applications course in Upper-Secondary Schools of Communications, before rest of the game.",
+    "description": "Pacman clone built in vanilla JavaScript with Canvas API and A* pathfinding for ghost AI - designed to showcase maps from pacman-the-poor-map-editor, made for Client Applications course in 2020",
     "period": {
-      "from": "2022-04",
-      "to": "2022-04"
+      "from": "2020-04",
+      "to": "2020-04"
     },
     "labels": ["web", "school", "game"],
-    "stack": ["html", "css", "javascript"]
+    "stack": ["html", "css", "javascript"],
+    "logoUrl": "logo.ico",
+    "demoUrl": "https://xramzes.com/pacman-the-poor-map-editor/"
   },
   {
     "projectId": "xramzesx.github.io",
