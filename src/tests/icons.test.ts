@@ -7,21 +7,27 @@ const validIds = new Set(icons.map((i) => i.iconId));
 
 describe("icon integrity", () => {
   it("all skill badges have valid iconId", () => {
+    const missing: string[] = [];
+
     skills.forEach((section) => {
       section.badges.forEach((id) => {
-        expect(validIds.has(id), `Unknown iconId "${id}" in skills`).toBe(true);
+        if (!validIds.has(id)) missing.push(`skills: "${id}"`);
       });
     });
+
+    expect(missing, `Missing iconIds:\n${missing.join("\n")}`).toHaveLength(0);
   });
 
   it("all project stack icons have valid iconId", () => {
+    const missing: string[] = [];
+
     projects.forEach((project) => {
       project.stack.forEach((id) => {
-        expect(
-          validIds.has(id),
-          `Unknown iconId "${id}" in project "${project.projectId}"`,
-        ).toBe(true);
+        if (!validIds.has(id))
+          missing.push(`project "${project.projectId}": "${id}"`);
       });
     });
+
+    expect(missing, `Missing iconIds:\n${missing.join("\n")}`).toHaveLength(0);
   });
 });
