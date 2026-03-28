@@ -1,9 +1,18 @@
 import styled from "styled-components";
 
-type FontSize = "large" | "normal";
+type FontSize = "large" | "normal" | "small";
 
 const Container = styled.a<{ $theme: Theme; $size: FontSize }>`
-  font-size: ${({ $size }) => ($size === "large" ? "1.25rem" : "1rem")};
+  font-size: ${({ $size }) => {
+    switch ($size) {
+      case "large":
+        return "1.25rem";
+      case "normal":
+        return "1rem";
+      case "small":
+        return ".75rem";
+    }
+  }};
   text-decoration: none;
 
   padding: 0.5rem 0.25rem;
@@ -46,7 +55,7 @@ const Icon = styled.img`
 
 type Props = {
   href: string;
-  label: string;
+  label?: string;
   theme: Theme;
   size: FontSize;
   iconSrc?: string;
@@ -57,7 +66,7 @@ const Link = ({ href, label, theme, size, iconSrc, iconAlt }: Props) => {
   return (
     <Container href={href} $theme={theme} $size={size} target="_blank">
       {iconSrc ? <Icon src={iconSrc} alt={iconAlt} draggable={false} /> : null}
-      <LinkLabel $theme={theme}>{label}</LinkLabel>
+      {label ? <LinkLabel $theme={theme}>{label}</LinkLabel> : null}
     </Container>
   );
 };

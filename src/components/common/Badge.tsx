@@ -1,24 +1,54 @@
 import styled from "styled-components";
 
+type IconSize = "small" | "normal";
+type Theme = "light" | "dark";
+
 type BadgeProps = {
   href: string;
-  label: string;
+  label?: string;
   iconSrc: string;
   iconAlt: string;
   iconForceRound: boolean;
+  iconSize: IconSize;
+  theme: Theme;
 };
 
-const Icon = styled.img<{ $forceRound: boolean }>`
-  width: 1.75rem;
-  height: 1.75rem;
+const Icon = styled.img<{ $forceRound: boolean; $iconSize: IconSize }>`
+  ${({ $iconSize }) => {
+    let iconSize = "";
+
+    if ($iconSize === "small") {
+      iconSize = "1rem";
+    } else {
+      iconSize = "1.75rem";
+    }
+
+    return `
+        width: ${iconSize};
+        height: ${iconSize};
+    `;
+  }};
+
   ${({ $forceRound }) => ($forceRound ? "border-radius: .25rem;" : "")}
 `;
 
 const BadgeLabel = styled.div``;
 
-const BadgeContainer = styled.a`
+const BadgeContainer = styled.a<{ $theme: Theme }>`
   user-select: none;
-  background: #222;
+
+  ${({ $theme }) => {
+    if ($theme === "light") {
+      return `
+            background: #fafafa;
+            box-shadow: inset 0 0 0.1rem #e0e0e0;
+        `;
+    } else {
+      return `
+            background: #222;    
+        `;
+    }
+  }};
   border-radius: 0.5rem;
   color: white;
   padding: 0.5rem;
@@ -33,7 +63,18 @@ const BadgeContainer = styled.a`
     background-color 0.2s ease;
 
   &:hover {
-    background: #333;
+    ${({ $theme }) => {
+      if ($theme === "light") {
+        return `
+            background: #eaeaea;
+            box-shadow: inset 0 0 0.1rem #d0d0d0;
+        `;
+      } else {
+        return `
+            background: #333;
+        `;
+      }
+    }};
   }
 
   &:active {
@@ -47,15 +88,18 @@ const Badge = ({
   iconAlt,
   label,
   iconForceRound,
+  iconSize,
+  theme,
 }: BadgeProps) => (
-  <BadgeContainer href={href} target="_blank">
+  <BadgeContainer href={href} $theme={theme} target="_blank">
     <Icon
       src={iconSrc}
       alt={iconAlt}
       $forceRound={iconForceRound}
+      $iconSize={iconSize}
       draggable={false}
     />
-    <BadgeLabel>{label}</BadgeLabel>
+    {label ? <BadgeLabel>{label}</BadgeLabel> : null}
   </BadgeContainer>
 );
 

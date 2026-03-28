@@ -58,3 +58,20 @@ type ResolvedSkill = {
   title: string;
   badges: ResolvedIcon[];
 };
+
+type ResolvedProject = {
+  projectId: string;
+
+  name: string;
+  description: string;
+  period: Period;
+
+  labels: ProjectLabel[];
+  stack: ResolvedIcon[];
+
+  comingSoon: boolean;
+  repoUrl?: string;
+  demoUrl?: string;
+  logoUrl?: string;
+  thumbnailUrl?: string;
+};
