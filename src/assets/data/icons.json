@@ -47,6 +47,11 @@
         "href": "https://cppreference.com/"
     },
     { 
+      "iconId" : "python", 
+      "name": "Python", 
+      "href": "https://www.python.org/"
+    },
+    { 
         "iconId" : "bash", 
         "name": "Bash", 
         "href": "https://www.gnu.org/software/bash/"
@@ -87,6 +92,37 @@
         "href": "https://jestjs.io/"
     },
     { 
+        "iconId" : "materialui", 
+        "name": "MaterialUI", 
+        "href": "https://mui.com/"
+    },
+    { 
+        "iconId" : "styled-components", 
+        "name": "styled-components", 
+        "href": "https://styled-components.com/"
+    },
+    { 
+        "iconId" : "reanimated", 
+        "name": "RN Reanimated", 
+        "href": "https://docs.swmansion.com/react-native-reanimated/"
+    },
+    { 
+        "iconId" : "rngh", 
+        "name": "RN Gesture Handler", 
+        "href": "https://docs.swmansion.com/react-native-gesture-handler/"
+    },
+    { 
+        "iconId" : "react-router", 
+        "name": "React Router", 
+        "href": "https://reactrouter.com/"
+    },
+
+    { 
+        "iconId" : "styled-components", 
+        "name": "styled-components", 
+        "href": "https://styled-components.com/"
+    },
+    { 
         "iconId" : "eslint", 
         "name": "ESLint", 
         "href": "https://nodejs.org/"
@@ -100,6 +136,16 @@
         "iconId" : "expressjs", 
         "name": "Express.js", 
         "href": "https://expressjs.com/"
+    },
+    { 
+        "iconId" : "spring", 
+        "name": "Spring", 
+        "href": "https://spring.io/"
+    },
+    { 
+        "iconId" : "javafx", 
+        "name": "JavaFx", 
+        "href": "https://openjfx.io/"
     },
     { 
         "iconId" : "prisma", 
@@ -146,6 +192,32 @@
         "name": "Open Telemetry", 
         "href": "https://opentelemetry.io/"
     },
+    { 
+        "iconId" : "jaeger", 
+        "name": "Jaeger", 
+        "href": "https://www.jaegertracing.io/"
+    },
+    { 
+        "iconId" : "prometheus", 
+        "name": "Prometheus", 
+        "href": "https://prometheus.io/"
+    },
+    { 
+        "iconId" : "grafana", 
+        "name": "Grafana", 
+        "href": "https://grafana.com/"
+    },
+    { 
+        "iconId" : "maven", 
+        "name": "Maven", 
+        "href": "https://maven.apache.org/"
+    },
+    { 
+        "iconId" : "gradle", 
+        "name": "Gradle", 
+        "href": "https://gradle.org/"
+    },
+
     { 
         "iconId" : "jenkins", 
         "name": "Jenkins", 
@@ -214,5 +286,20 @@
         "iconId" : "assembly", 
         "name": "Assembly x86", 
         "href": "https://github.com/qb40/masm/"
+    },
+    { 
+        "iconId" : "numpy", 
+        "name": "NumPy", 
+        "href": "https://numpy.org/"
+    },
+    { 
+        "iconId" : "opencv", 
+        "name": "OpenCV", 
+        "href": "https://opencv.org/"
+    },
+    { 
+        "iconId" : "php", 
+        "name": "PHP", 
+        "href": "https://www.php.net/"
     }
 ]

@@ -33,7 +33,7 @@
       "to": "2025-06"
     },
     "labels": ["school", "backend", "devops"],
-    "stack": ["python", "grpc", "opentelemetry", "jaeger", "prometheus", "graphana" ]
+    "stack": ["python", "grpc", "opentelemetry", "jaeger", "prometheus", "grafana" ]
   },
   {
     "projectId": "digital-image-processing",

@@ -11,6 +11,7 @@
             "kotlin",
             "c",
             "cpp",
+            "python",
             "bash",
             "powershell"
         ]
@@ -21,7 +22,11 @@
             "react",
             "react-native",
             "metro",
+            "reanimated",
+            "rngh",
             "expo",
+            "styled-components",
+            "materialui",
             "threejs",
             "jest"
         ]
@@ -31,6 +36,7 @@
         "badges": [
             "nodejs",
             "expressjs",
+            "spring",
             "prisma",
             "grpc",
             "postgres",
@@ -45,14 +51,24 @@
             "git",
             "docker",
             "opentelemetry",
+            "prometheus",
+            "grafana",
+            "jaeger",
+            "gradle",
+            "maven",
             "jenkins",
             "github-actions",
-            "eslint",
-            "figma",
-            "affinity",
+            "eslint"
+        ]
+    },
+    {
+        "title": "Design & Creative",
+        "badges": [
             "photoshop",
             "after-effects",
             "premiere-pro",
+            "figma",
+            "affinity",
             "blender"
         ]
     },
@@ -63,7 +79,11 @@
             "csharp",
             "erlang",
             "elixir",
-            "assembly"
+            "assembly",
+            "javafx",
+            "numpy",
+            "opencv",
+            "php"
         ]
     }
     
