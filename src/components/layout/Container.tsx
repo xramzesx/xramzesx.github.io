@@ -12,7 +12,7 @@ const StyledContainer = styled.div<{
 }>`
   /* WIDTH */
   width: 100vw;
-  max-width: ${sizes.safeArea.normal}px;
+  max-width: ${sizes.breakpoints.large}px;
 
   /* HEIGHT */
   ${({ $heightType }) => {

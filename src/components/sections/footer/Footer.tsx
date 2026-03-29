@@ -21,9 +21,16 @@ const FooterContainer = styled(Container)`
   gap: 0.5rem;
 `;
 
+const LinksContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+`;
+
 const Copyright = styled.span<{ $textLength: number }>`
   flex: 1;
   padding: 0.5rem 0.25rem;
+  font-size: 0.75rem;
 
   text-align: right;
   min-width: ${({ $textLength }) => `calc(1ch * ${$textLength} + 0.5rem)`};
@@ -36,18 +43,20 @@ const Footer = () => {
   return (
     <Wrapper>
       <FooterContainer heightType="custom">
-        <Link
-          href="https://www.linkedin.com/in/jakubkedra/"
-          label="LinkedIn"
-          size="normal"
-          theme="light"
-        />
-        <Link
-          href="https://github.com/xramzesx"
-          theme="light"
-          size="normal"
-          label="GitHub"
-        />
+        <LinksContainer>
+          <Link
+            href="https://www.linkedin.com/in/jakubkedra/"
+            label="LinkedIn"
+            size="normal"
+            theme="light"
+          />
+          <Link
+            href="https://github.com/xramzesx"
+            theme="light"
+            size="normal"
+            label="GitHub"
+          />
+        </LinksContainer>
         <Copyright $textLength={copyrightContent.length}>
           {copyrightContent}
         </Copyright>
