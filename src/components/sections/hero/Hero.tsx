@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Container from "../../layout/Container";
-import hero from "@/assets/img/hero.jpg";
+import hero from "@/assets/img/hero.webp";
 import githubIcon from "@/assets/img/icons/github.svg";
 import linkedInIcon from "@/assets/img/icons/linkedin.svg";
 import { media } from "@/constants/breakpoints";

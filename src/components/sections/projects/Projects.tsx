@@ -63,7 +63,7 @@ const CardsContainer = styled.div`
 
 const Projects = () => {
   const projects = useProjects();
-  console.log(projects.map(({ projectId }) => projectId));
+
   const projectCards = projects.map(
     ({
       projectId,
