@@ -1,19 +1,29 @@
 import styled from "styled-components";
-import sizes from "@/constants/sizes";
 import Badge from "@/components/common/Badge";
 import Link from "@/components/common/Link";
+import { media } from "@/constants/breakpoints";
+
+type CardSize = "normal" | "large";
 
 const LOGO_SIZE = "1rem";
 
-const Container = styled.div`
+const Container = styled.div<{ $size: CardSize; $hasThumbnail: boolean }>`
   border-radius: 0.5rem;
-  background-color: #ffffff99;
+  background-color: #2229;
+  color: #ccc;
+  position: relative;
 
-  filter: drop-shadow(#eee 0rem 0rem 0.5rem);
   display: flex;
   flex-direction: column;
 
-  max-width: calc((${sizes.safeArea.normal}px - 2 * 2rem - 3 * 1rem) / 4);
+  grid-column: ${({ $size }) => ($size === "large" ? "span 2" : "span 1")};
+  grid-row: ${({ $hasThumbnail }) =>
+    $hasThumbnail === true ? "span 2" : "span 1"};
+
+  ${media.xsmall} {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
 `;
 
 const Thumbnail = styled.img`
@@ -50,11 +60,11 @@ const LogoContainer = styled.div`
   padding: 0.5rem;
   border-radius: 0.25rem;
 
-  background: #fafafa;
+  background: #111;
 
   width: calc(1rem + ${LOGO_SIZE});
   height: calc(1rem + ${LOGO_SIZE});
-  box-shadow: inset 0 0 0.1rem #e0e0e0;
+  box-shadow: inset 0 0 0.1rem #101010;
 `;
 
 const Logo = styled.img`
@@ -70,6 +80,7 @@ const Title = styled.h2`
 
 const Period = styled.div`
   font-size: 0.75rem;
+  color: #666;
 `;
 
 const LabelsContainer = styled.div`
@@ -79,17 +90,18 @@ const LabelsContainer = styled.div`
 `;
 
 const Label = styled.span`
-  background: #fafafa;
+  background: #111;
   padding: 0.25rem 0.5rem;
   border-radius: 1rem;
   font-size: 0.75rem;
-  box-shadow: inset 0 0 0.1rem #e0e0e0;
+  color: #999;
 `;
 
 const Description = styled.p`
   font-size: 0.75rem;
   padding: 0.5rem 0;
   flex: 1;
+  color: #999;
 `;
 
 const StackBadges = styled.div`
@@ -99,7 +111,7 @@ const StackBadges = styled.div`
 `;
 
 const Footer = styled.div`
-  border-top: 1px solid #efefef;
+  border-top: 1px solid #333;
   padding-top: 0.5rem;
   margin: 0.75rem;
 `;
@@ -119,6 +131,7 @@ type Props = {
   thumbnailUrl?: string;
   demoUrl?: string;
   repoUrl?: string;
+  size: CardSize;
 };
 
 const ProjectCard = ({
@@ -133,29 +146,34 @@ const ProjectCard = ({
   demoUrl,
   comingSoon,
   period,
+  size,
 }: Props) => {
-  const labelComponents = labels.map((label) => <Label>{label}</Label>);
+  const labelComponents = labels.map((label) => (
+    <Label key={label}>{label}</Label>
+  ));
+
   const badges = stackBadges.map((badge) => (
     <Badge
+      key={badge.iconId}
       href={badge.href}
       iconSrc={badge.activeSrc}
       iconAlt={badge.alt}
       iconForceRound={badge.forceRound}
       iconSize="small"
-      theme="light"
+      theme="dark"
     />
   ));
 
   const repoLink = repoUrl ? (
-    <Link href={repoUrl} theme="dark" size="small" label="View on GitHub >" />
+    <Link href={repoUrl} theme="light" size="small" label="View on GitHub >" />
   ) : null;
 
   const demoLink = demoUrl ? (
-    <Link href={demoUrl} theme="dark" size="small" label="Live Demo >" />
+    <Link href={demoUrl} theme="light" size="small" label="Live Demo >" />
   ) : null;
 
   return (
-    <Container>
+    <Container $size={size} $hasThumbnail={thumbnailUrl !== undefined}>
       {thumbnailUrl ? <Thumbnail src={thumbnailUrl} draggable={false} /> : null}
       <Content>
         <Header>
@@ -172,7 +190,8 @@ const ProjectCard = ({
         <StackBadges>{badges}</StackBadges>
       </Content>
       <Footer>
-        {repoLink} {demoLink}
+        {repoLink}
+        {demoLink}
       </Footer>
     </Container>
   );

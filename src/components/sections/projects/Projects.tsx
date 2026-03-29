@@ -2,6 +2,7 @@ import Container from "@/components/layout/Container";
 import styled from "styled-components";
 import ProjectCard from "./ProjectCard";
 import { useProjects } from "@/hooks/useProjects";
+import { media } from "@/constants/breakpoints";
 
 const Wrapper = styled.section`
   display: flex;
@@ -9,7 +10,7 @@ const Wrapper = styled.section`
   justify-content: center;
 
   padding: 6rem 0;
-  background: #efefef;
+  background: #101010;
   position: relative;
 `;
 
@@ -17,13 +18,13 @@ const Background = styled.div`
   pointer-events: none;
   background-image: radial-gradient(
     circle at 1px 1px,
-    currentColor 1px,
+    white 1px,
     transparent 0
   );
   background-size: 15px 15px;
   background-position-x: 7.5px;
   background-position-y: 7.5px;
-  opacity: 10%;
+  opacity: 8%;
 
   position: absolute;
   top: 0;
@@ -35,19 +36,34 @@ const Background = styled.div`
 const Header = styled.h1`
   text-align: center;
   margin-bottom: 2rem;
+  color: #ddd;
 `;
 
 const CardsContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
+
+  ${media.medium} {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  ${media.small} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  ${media.xsmall} {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  grid-auto-flow: dense;
+
   padding: 0 2rem;
-  flex-wrap: wrap;
 `;
 
 const Projects = () => {
   const projects = useProjects();
-
+  console.log(projects.map(({ projectId }) => projectId));
   const projectCards = projects.map(
     ({
       projectId,
@@ -61,6 +77,7 @@ const Projects = () => {
       thumbnailUrl,
       comingSoon,
       period,
+      featured,
     }) => (
       <ProjectCard
         key={projectId}
@@ -75,6 +92,7 @@ const Projects = () => {
         labels={labels}
         comingSoon={comingSoon}
         period={period}
+        size={featured ? "large" : "normal"}
       />
     ),
   );
