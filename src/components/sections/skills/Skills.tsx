@@ -61,7 +61,7 @@ const Skills = () => {
     ));
 
     return (
-      <SectionContainer>
+      <SectionContainer key={title}>
         <Header>{title}</Header>
         <BadgesContainer>{badgeComponents}</BadgesContainer>
       </SectionContainer>
