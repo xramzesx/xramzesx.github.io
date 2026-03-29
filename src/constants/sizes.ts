@@ -11,14 +11,12 @@ const font = {
   normal: common.normal,
 };
 
-const safeArea = {
-  wide: 1920,
-  normal: 1300,
+const breakpoints = {
+  xlarge: 1920,
+  large: 1300,
+  medium: 1024,
+  small: 720,
+  xsmall: 640,
 };
 
-const screen = {
-  desktop: "1200px",
-  mobile: "720px",
-};
-
-export default { screen, safeArea };
+export default { breakpoints };
