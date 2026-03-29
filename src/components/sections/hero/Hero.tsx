@@ -67,11 +67,35 @@ const Title = styled.h1`
 
 const Info = styled.p`
   font-size: 1.5rem;
+  font-family: monospace;
+  color: #444;
 
   ${media.mobile} {
     text-align: center;
     font-size: 1.25rem;
-    max-width: 20rem;
+    max-width: 24rem;
+  }
+
+  ${media.small} {
+    font-size: 1rem;
+    max-width: 24rem;
+  }
+`;
+
+const InfoSection = styled.span`
+  &::before {
+    content: " · ";
+  }
+
+  &:last-child::after {
+    content: " · ";
+  }
+
+  ${media.mobile} {
+    &::before,
+    &:last-child::after {
+      font-weight: 900;
+    }
   }
 `;
 
@@ -111,8 +135,11 @@ const Hero = () => {
         <Content>
           <Title> Jakub Kędra </Title>
           <Info>
-            5th-year Computer Science student at AGH University of Science and
-            Technology, Faculty of Computer Science
+            <InfoSection>Software Engineer</InfoSection>
+            <InfoSection>Fullstack & Mobile</InfoSection>
+            <InfoSection>
+              MSc Computer Science student at AGH University of Kraków
+            </InfoSection>
           </Info>
           <LinksContainer>
             <Link
