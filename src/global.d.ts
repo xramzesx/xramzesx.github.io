@@ -74,4 +74,5 @@ type ResolvedProject = {
   demoUrl?: string;
   logoUrl?: string;
   thumbnailUrl?: string;
+  featured?: boolean;
 };
