@@ -1,5 +1,19 @@
 [
-  {
+   {
+    "projectId": "gymu",
+    "name": "GymU",
+    "repoUrl": "https://github.com/Skalakid/gymU",
+    "description": "Gym progress tracker for iOS & Android with workout planning, live training mode, exercise recommendations and stats - built with React Native, Expo, Node.js, Python & PostgreSQL, containerized with Docker",
+    "period": {
+      "from": "2024-01",
+      "to": "2025-01"
+    },
+    "labels": ["mobile", "backend", "fullstack", "devops"],
+    "stack": ["typescript", "react-native", "nodejs", "expressjs","postgres", "grpc", "python", "jenkins"],
+    "logoUrl": "logo.svg",
+    "thumbnailUrl" : "thumbnail.svg"
+   },
+   {
     "projectId": "elevator-system",
     "name": "Elevator System",
     "repoUrl": "https://github.com/xramzesx/elevator-system",
@@ -9,7 +23,7 @@
       "to": "2023-07"
     },
     "labels": ["web", "backend", "fullstack"],
-    "stack": ["react","typescript", "styled-components", "materialui", "java", "spring"]
+    "stack": ["typescript", "react", "styled-components", "materialui", "java", "spring", "junit"]
   },
   {
     "projectId": "differential-equations-fem",
@@ -243,6 +257,6 @@
       "to": "2026-03"
     },
     "labels": ["web"],
-    "stack": ["react", "typescript", "styled-components", "github-actions"]
+    "stack": ["typescript", "react", "styled-components", "jest", "github-actions"]
   }
 ]

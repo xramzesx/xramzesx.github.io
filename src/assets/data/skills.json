@@ -42,7 +42,8 @@
             "postgres",
             "mysql",
             "tsql",
-            "mongodb"
+            "mongodb",
+            "junit"
         ]
     },
     {

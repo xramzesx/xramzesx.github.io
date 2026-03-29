@@ -143,6 +143,12 @@
         "href": "https://spring.io/"
     },
     { 
+        "iconId" : "junit", 
+        "name": "JUnit", 
+        "href": "https://junit.org/"
+    },
+
+    { 
         "iconId" : "javafx", 
         "name": "JavaFx", 
         "href": "https://openjfx.io/"
