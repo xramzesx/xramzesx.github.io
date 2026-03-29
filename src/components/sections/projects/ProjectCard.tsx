@@ -134,8 +134,8 @@ type Props = {
   size: CardSize;
 };
 
+/// TODO: Setup comingSoon support
 const ProjectCard = ({
-  projectId,
   name,
   description,
   labels,
@@ -144,7 +144,6 @@ const ProjectCard = ({
   thumbnailUrl,
   repoUrl,
   demoUrl,
-  comingSoon,
   period,
   size,
 }: Props) => {
