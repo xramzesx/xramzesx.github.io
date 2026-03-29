@@ -1,0 +1,90 @@
+[
+    {
+        "title" : "Main Languages",
+        "badges": [
+            "javascript",
+            "typescript",
+            "html",
+            "css",
+            "scss",
+            "java",
+            "kotlin",
+            "c",
+            "cpp",
+            "python",
+            "bash",
+            "powershell"
+        ]
+    },
+    {
+        "title": "Mobile & Frontend",
+        "badges": [
+            "react",
+            "react-native",
+            "metro",
+            "reanimated",
+            "rngh",
+            "expo",
+            "styled-components",
+            "materialui",
+            "threejs",
+            "jest"
+        ]
+    },
+    {
+        "title": "Backend & Databases",
+        "badges": [
+            "nodejs",
+            "expressjs",
+            "spring",
+            "prisma",
+            "grpc",
+            "postgres",
+            "mysql",
+            "tsql",
+            "mongodb",
+            "junit"
+        ]
+    },
+    {
+        "title": "DevOps & Tools",
+        "badges": [
+            "git",
+            "docker",
+            "opentelemetry",
+            "prometheus",
+            "grafana",
+            "jaeger",
+            "gradle",
+            "maven",
+            "jenkins",
+            "github-actions",
+            "eslint"
+        ]
+    },
+    {
+        "title": "Design & Creative",
+        "badges": [
+            "photoshop",
+            "after-effects",
+            "premiere-pro",
+            "figma",
+            "affinity",
+            "blender"
+        ]
+    },
+    {
+        "title": "Other technologies I worked with",
+        "badges": [
+            "rust",
+            "csharp",
+            "erlang",
+            "elixir",
+            "assembly",
+            "javafx",
+            "numpy",
+            "opencv",
+            "php"
+        ]
+    }
+]
