@@ -1,3 +1,4 @@
+import { media } from "@/constants/breakpoints";
 import styled from "styled-components";
 
 type IconSize = "small" | "normal";
@@ -30,6 +31,10 @@ const Icon = styled.img<{ $forceRound: boolean; $iconSize: IconSize }>`
   }};
 
   ${({ $forceRound }) => ($forceRound ? "border-radius: .25rem;" : "")}
+  ${media.xsmall} {
+    width: 1rem;
+    height: 1rem;
+  }
 `;
 
 const BadgeLabel = styled.div``;

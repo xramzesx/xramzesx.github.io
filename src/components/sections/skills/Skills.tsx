@@ -26,7 +26,6 @@ const BadgesContainer = styled.div`
   gap: 0.5rem;
   flex-wrap: wrap;
   max-width: calc(11 * 3rem + 10 * 0.5rem + 4rem);
-  /* align-self: center; */
 `;
 
 const SectionContainer = styled.div`
